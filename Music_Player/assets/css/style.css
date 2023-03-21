@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,800;0,900;1,300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.player {
+    width: 450px;
+    /* background-color: #cceaf3; */
+    background-color: RGBA( 100, 149, 237, 0.6);
+}
+
+.dashboard {
+    width: 450px;
+    position: fixed;
+    top: -10px;
+    left: 50%;
+    padding: 10px 40px;
+    /* background-image: url('/assets/img/background.jpg'); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 1px 1px 10px 0px rgba(128, 134, 143, 0.65);
+    text-align: center;
+    transform: translateX(-50%);
+}
+
+header {
+    margin-top: 20px;
+}
+
+header h4 {
+    color: #d71268;
+    font-size: 20px;
+}
+
+.cd {
+    width: 100%;
+    margin: 20px 0 30px 0;
+}
+
+.cd-thumb {
+    width: 180px;
+    height: 180px;
+    margin: auto;
+    border-radius: 50%;
+    /* background-image: url('/assets/img/background.jpg'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.control {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+    color: #fff;
+    /* background-color: #ccc;
+    box-shadow: 1px 1px 10px 0px rgba(128, 134, 143, 0.65); */
+    border-radius: 10px;
+    outline: none;
+}
+
+
+
+.control .btn {
+    font-size: 22px;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+
+.control .btn:hover {
+    color: #d71268
+}
+
+.control .btn:active {
+    color: #d71268
+}
+
+.control .btn:nth-child(3) {
+    width: 50px;
+    padding: 10px 20px;
+    background-color: #d71268;
+    color: #fff;
+    border-radius: 8px;
+    border-radius: 50%;
+}
+
+.control .btn:nth-child(3):hover {
+    color: #000;
+}
+
+.progress {
+    margin: 30px 0;
+    width: 100%;
+    accent-color: #d71268; 
+}
+
+.playlist {
+    margin-top: 500px;
+}
+
+.song {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding: 12px 10px;
+    width: 90%;
+    box-shadow: 1px 1px 10px 0px rgba(128, 134, 143, 0.65);
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.song:active {
+    opacity: 0.8;
+    background-color: #ebd5e1;
+}
+
+.song.active {
+    background-color: #cceaf3;
+}
+
+.song.active .title,
+.song.active .author {
+    color: #000;
+}
+
+.song .thumb {
+    width: 30px;
+    height: 48px;
+    background-image: url('./assets/Images/astronaut-earth-space-2@0@f-preview.jpg');
+    border-radius: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-basis: 60px;
+}
+
+.song .body {
+    flex-grow: 1;
+    flex-basis: 330px;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.song .author {
+    font-size: 14px;
+    color: #999;
+}
+
+.song .option {
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+.song .option:hover {
+    color: #d71268;
+}
+
+.active {
+    color: #d71268;
+}
